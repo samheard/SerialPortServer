@@ -1,0 +1,20 @@
+ How to Use the Prototype
+Dependencies: Install the required libraries:
+
+Bash
+
+pip install pyserial
+
+Server Setup:
+
+Modify server.py: Change the COM port names (COM3, COM4) to match your system's serial ports.
+
+Run the server: Execute python server.py. It will start listening for connections.
+
+Client Usage:
+
+Modify client.py: Ensure the host and port match the server's configuration.
+
+Run the client: Execute python client.py. It will connect to the server, send messages to each channel, and print the server's responses.
+
+This prototype demonstrates the key concepts: a centralized server handling serial I/O and a separate client for application-level communication. The use of JSON-based messaging allows for a flexible and extensible protocol.
